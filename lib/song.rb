@@ -17,10 +17,7 @@ class Song
   
   def artist=(artist)
     @artist = artist
-    if self.artist.songs.detect { |song| song == self }
-    else
-      self.artist.songs << self
-    end
+    self.artist.songs << self unless self.artist.songs.include?(self)
   end
 
   def artist_name=(name)
