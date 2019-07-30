@@ -12,7 +12,7 @@ class MP3Importer
     # Dir.chdir(self.path)
     files = Dir.glob("*")
     # Dir.chdir("/home/radville/ruby-collaborating-objects-lab-online-web-ft-071519")
-    # files
+    files
   end
   
   def import
